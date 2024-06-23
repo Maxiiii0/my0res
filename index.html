@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body style="margin: 0;">
-    <embed src="Resume.pdf" type="application/pdf" style="width: 100%;height: 100vh;" />
-</body>
+    <script>
+      function Click() {
+        const ele = document.getElementById("a");
+        ele.click();
+      }
+      window.onload = Click;
+    </script>
+  </head>
+  <body style="margin: 0">
+    <a id="a" style="display: none" href="Resume.pdf"></a>
+  </body>
 </html>
