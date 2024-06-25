@@ -3,10 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://soorajrao.in/favicon.ico">
+    <link rel="icon" href="https://soorajrao.in/favicon.ico" />
     <title>Resume - Sooraj Rao</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+      }
+      .pdf-container {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
-  <body style="margin: 0">
-    <embed src="Resume.pdf" type="" style="height: 100vh" width="100%" />
+  <body>
+    <object
+      class="pdf-container"
+      data="Resume-SoorajRao.pdf"
+      type="application/pdf"
+    >
+      <embed
+        src="Resume-SoorajRao.pdf"
+        type="application/pdf"
+        style="width: 100%; height: 100%"
+      />
+      <p>
+        If the PDF does not load, you can
+        <a href="Resume-SoorajRao.pdf" download>Click here</a>.
+      </p>
+    </object>
   </body>
 </html>
