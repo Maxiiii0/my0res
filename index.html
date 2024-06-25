@@ -9,34 +9,18 @@
       body,
       html {
         margin: 0;
+        padding: 0;
         height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f0f0f0;
+        overflow: hidden;
       }
-      .pdf-container {
+      iframe {
         width: 100%;
         height: 100%;
+        border: none;
       }
     </style>
   </head>
   <body>
-    <object
-      class="pdf-container"
-      data="Resume-SoorajRao.pdf"
-      type="application/pdf"
-    >
-      <embed
-        src="Resume-SoorajRao.pdf"
-        type="application/pdf"
-        style="width: 100%; height: 100%"
-      />
-      <p>
-        If the PDF does not load, you can
-        <a href="Resume-SoorajRao.pdf" download>Click here</a>.
-      </p>
-    </object>
+    <iframe src="Resume-SoorajRao.pdf"></iframe>
   </body>
 </html>
